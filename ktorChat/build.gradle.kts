@@ -1,6 +1,3 @@
-
-val koinVersion: String by project
-
 plugins {
     alias(libs.plugins.kotlin.jvm)
     alias(libs.plugins.ktor)
