@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidKtorChat</string>
+    <string name="enter_a_username">Enter a username</string>
+    <string name="join">Join</string>
 </resources>
