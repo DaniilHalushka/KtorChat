@@ -1,6 +1,5 @@
-package com.halushka.ktorchat
+package com.halushka.ktorchat.data.remote
 
-import com.halushka.ktorchat.data.remote.ChatSocketService
 import com.halushka.ktorchat.data.remote.dto.MessageDto
 import com.halushka.ktorchat.domain.model.Message
 import com.halushka.ktorchat.util.Resource
