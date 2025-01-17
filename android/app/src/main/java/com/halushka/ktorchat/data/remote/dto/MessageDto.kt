@@ -12,7 +12,7 @@ data class MessageDto(
     val username: String,
     val id: String
 ) {
-    fun mapToMessage(): Message {
+    fun toMessage(): Message {
         val date = Date(timestamp)
         val formattedDate = DateFormat
             .getDateInstance(DateFormat.DEFAULT)
