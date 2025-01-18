@@ -1,9 +1,10 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.compose.compiler)
     alias(libs.plugins.google.dagger.hilt.android)
     alias(libs.plugins.ksp)
-    alias(libs.plugins.kotlinx.serialization)
+    id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 android {
@@ -43,7 +44,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.0"
     }
     packaging {
         resources {
@@ -89,7 +90,6 @@ dependencies {
     implementation(libs.ktor.client.content.negotiation)
     implementation(libs.ktor.serialization.kotlinx.json)
     implementation(libs.ktor.client.logging)
-    implementation(libs.logback.classic)
 
-    implementation(libs.kotlinx.serialization.json)
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.21")
 }
