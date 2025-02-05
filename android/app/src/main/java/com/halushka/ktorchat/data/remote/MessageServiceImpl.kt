@@ -11,7 +11,6 @@ class MessageServiceImpl(
 ) : MessageService {
     override suspend fun getAllMessages(): List<Message> {
         return try {
-            //TODO add body to get request
             client.get(MessageService.Endpoints.GetAllMessages.url)
                 .body<List<MessageDto>>()
                 .map { it.toMessage() }

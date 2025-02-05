@@ -7,7 +7,7 @@ interface MessageService {
 
     //TODO here is your server IP
     companion object {
-        const val BASE_URL = "http://192.168.117.107:8080"
+        const val BASE_URL = "enter your server IP"
     }
 
     sealed class Endpoints(val url: String) {
